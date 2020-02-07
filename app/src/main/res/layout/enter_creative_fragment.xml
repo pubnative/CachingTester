@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EnterCreativeFragment">
+
+        <EditText
+            android:id="@+id/creativeEditText"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:hint="Enter the creative here"
+            android:maxLines="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <Button
+            android:id="@+id/cacheButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/cache"
+            android:background="@drawable/mybutton"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/showButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/creativeEditText" />
+
+        <Button
+            android:id="@+id/showButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/show"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/mybutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cacheButton"
+            app:layout_constraintTop_toBottomOf="@+id/creativeEditText" />
+
+        <ImageButton
+            android:id="@+id/pasteButton"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toEndOf="@+id/creativeEditText"
+            app:layout_constraintTop_toTopOf="@+id/creativeEditText"
+            app:srcCompat="@drawable/paste_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

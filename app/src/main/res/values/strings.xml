@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CachingTester</string>
+    <string name="cache">Cache</string>
+    <string name="show">Show</string>
+</resources>
